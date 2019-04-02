@@ -9,6 +9,7 @@ using namespace std;
 
 Menu::Menu() {
     cursor = new GameObject(4, 5, 0, "cursor");
+    engine = new Engine();
     close_the_game = false;
     gameIsRun = false;
     auto start = new GameObject(5, 5, 0, "m_start");
@@ -25,10 +26,11 @@ Menu::~Menu() {
 
 void Menu::update() {
     if (gameIsRun) {
-        engine.update();
+        engine->update();
         int key = terminal_peek();
         if (key == TK_ESCAPE) {
-            engine.restore();
+            delete engine;
+            engine = new Engine();
             gameIsRun = false;
             cursor->set_pos(4, 5, 0);
         }
@@ -84,17 +86,18 @@ bool Menu::isGameClose() {
 
 void Menu::render() {
     if (gameIsRun) {
-        if (!engine.get_info(GAME)) {
-            engine.render();
+        if (!engine->get_info(GAME)) {
+            engine->render();
             terminal_color("green");
-            terminal_print(5, engine.get_info(MAP_H) + 1, player_name);
-            string tmp = "SCORE:" + to_string(engine.get_info(SCORE));
-            terminal_print(5, engine.get_info(MAP_H) + 2, tmp.c_str());
-            tmp = "STEPS:" + to_string(engine.get_info(STEPS));
-            terminal_print(5, engine.get_info(MAP_H) + 3, tmp.c_str());
+            terminal_print(5, engine->get_info(MAP_H) + 1, player_name);
+            string tmp = "SCORE:" + to_string(engine->get_info(SCORE));
+            terminal_print(5, engine->get_info(MAP_H) + 2, tmp.c_str());
+            tmp = "STEPS:" + to_string(engine->get_info(STEPS));
+            terminal_print(5, engine->get_info(MAP_H) + 3, tmp.c_str());
         } else {
-            cursor->set_pos(4, 5, 0);
-            gameIsRun = false;
+            terminal_print(5, 5, "Game is over! Press Esc...");
+            //cursor->set_pos(4, 5, 0);
+            //gameIsRun = false;
         }
     } else {
         cursor->render();

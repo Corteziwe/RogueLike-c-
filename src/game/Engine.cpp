@@ -3,6 +3,7 @@
 //
 
 #include <game/Systems/MovementSystem.h>
+#include <BearLibTerminal.h>
 #include "game/Engine.h"
 
 Engine::Engine() {

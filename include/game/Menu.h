@@ -26,7 +26,7 @@ public:
 private:
     bool close_the_game;
     bool gameIsRun;
-    Engine engine;
+    Engine* engine;
     GameObject* cursor;
     vector <GameObject*> menu_objects;
     wchar_t player_name[32] = L"Autostagaut";

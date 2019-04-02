@@ -1,12 +1,8 @@
-My first C++ game (Work in progress)
+Игра в стиле Roguelike, он же рогалик. 
+Разрабатывает Троян Александр
 
-02.04.2019
-----------------------------------------
-- Added Main Menu
-- MovementSystem was created
-- LevelSystem was created
-- Now you can walk around the level and collect coins
-- Press Esc to go to the main menu
-
----------------------------------------
+-------------------- 5 ноября 2018 -----------------------
+* Добавлены стены
+* Добавлена трава
+* Добавлена водичка
 
