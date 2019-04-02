@@ -57,9 +57,22 @@ include src/CMakeFiles/game.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/game.dir/flags.make
 
+src/CMakeFiles/game.dir/game/Editor.cpp.o: src/CMakeFiles/game.dir/flags.make
+src/CMakeFiles/game.dir/game/Editor.cpp.o: ../src/game/Editor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/game.dir/game/Editor.cpp.o"
+	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/Editor.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Editor.cpp
+
+src/CMakeFiles/game.dir/game/Editor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/game/Editor.cpp.i"
+	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Editor.cpp > CMakeFiles/game.dir/game/Editor.cpp.i
+
+src/CMakeFiles/game.dir/game/Editor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/game/Editor.cpp.s"
+	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Editor.cpp -o CMakeFiles/game.dir/game/Editor.cpp.s
+
 src/CMakeFiles/game.dir/game/Engine.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/Engine.cpp.o: ../src/game/Engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/game.dir/game/Engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/game.dir/game/Engine.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/Engine.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Engine.cpp
 
 src/CMakeFiles/game.dir/game/Engine.cpp.i: cmake_force
@@ -72,7 +85,7 @@ src/CMakeFiles/game.dir/game/Engine.cpp.s: cmake_force
 
 src/CMakeFiles/game.dir/game/GameObject.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/GameObject.cpp.o: ../src/game/GameObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/game.dir/game/GameObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/game.dir/game/GameObject.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/GameObject.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/GameObject.cpp
 
 src/CMakeFiles/game.dir/game/GameObject.cpp.i: cmake_force
@@ -85,7 +98,7 @@ src/CMakeFiles/game.dir/game/GameObject.cpp.s: cmake_force
 
 src/CMakeFiles/game.dir/game/Level.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/Level.cpp.o: ../src/game/Level.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/game.dir/game/Level.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/game.dir/game/Level.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/Level.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Level.cpp
 
 src/CMakeFiles/game.dir/game/Level.cpp.i: cmake_force
@@ -98,7 +111,7 @@ src/CMakeFiles/game.dir/game/Level.cpp.s: cmake_force
 
 src/CMakeFiles/game.dir/game/Menu.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/Menu.cpp.o: ../src/game/Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/game.dir/game/Menu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/game.dir/game/Menu.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/Menu.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Menu.cpp
 
 src/CMakeFiles/game.dir/game/Menu.cpp.i: cmake_force
@@ -111,7 +124,7 @@ src/CMakeFiles/game.dir/game/Menu.cpp.s: cmake_force
 
 src/CMakeFiles/game.dir/game/Position.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/Position.cpp.o: ../src/game/Position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/game.dir/game/Position.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/game.dir/game/Position.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/Position.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Position.cpp
 
 src/CMakeFiles/game.dir/game/Position.cpp.i: cmake_force
@@ -124,7 +137,7 @@ src/CMakeFiles/game.dir/game/Position.cpp.s: cmake_force
 
 src/CMakeFiles/game.dir/game/Systems/CollisionSystem.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/Systems/CollisionSystem.cpp.o: ../src/game/Systems/CollisionSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/game.dir/game/Systems/CollisionSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/game.dir/game/Systems/CollisionSystem.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/Systems/CollisionSystem.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/CollisionSystem.cpp
 
 src/CMakeFiles/game.dir/game/Systems/CollisionSystem.cpp.i: cmake_force
@@ -137,7 +150,7 @@ src/CMakeFiles/game.dir/game/Systems/CollisionSystem.cpp.s: cmake_force
 
 src/CMakeFiles/game.dir/game/Systems/LevelSystem.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/Systems/LevelSystem.cpp.o: ../src/game/Systems/LevelSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/game.dir/game/Systems/LevelSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/game.dir/game/Systems/LevelSystem.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/Systems/LevelSystem.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/LevelSystem.cpp
 
 src/CMakeFiles/game.dir/game/Systems/LevelSystem.cpp.i: cmake_force
@@ -150,7 +163,7 @@ src/CMakeFiles/game.dir/game/Systems/LevelSystem.cpp.s: cmake_force
 
 src/CMakeFiles/game.dir/game/Systems/MovementSystem.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/Systems/MovementSystem.cpp.o: ../src/game/Systems/MovementSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/game.dir/game/Systems/MovementSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/game.dir/game/Systems/MovementSystem.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/Systems/MovementSystem.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/MovementSystem.cpp
 
 src/CMakeFiles/game.dir/game/Systems/MovementSystem.cpp.i: cmake_force
@@ -163,7 +176,7 @@ src/CMakeFiles/game.dir/game/Systems/MovementSystem.cpp.s: cmake_force
 
 src/CMakeFiles/game.dir/game/main.cpp.o: src/CMakeFiles/game.dir/flags.make
 src/CMakeFiles/game.dir/game/main.cpp.o: ../src/game/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/game.dir/game/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/game.dir/game/main.cpp.o"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game/main.cpp.o -c /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/main.cpp
 
 src/CMakeFiles/game.dir/game/main.cpp.i: cmake_force
@@ -176,6 +189,7 @@ src/CMakeFiles/game.dir/game/main.cpp.s: cmake_force
 
 # Object files for target game
 game_OBJECTS = \
+"CMakeFiles/game.dir/game/Editor.cpp.o" \
 "CMakeFiles/game.dir/game/Engine.cpp.o" \
 "CMakeFiles/game.dir/game/GameObject.cpp.o" \
 "CMakeFiles/game.dir/game/Level.cpp.o" \
@@ -189,6 +203,7 @@ game_OBJECTS = \
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
+src/game: src/CMakeFiles/game.dir/game/Editor.cpp.o
 src/game: src/CMakeFiles/game.dir/game/Engine.cpp.o
 src/game: src/CMakeFiles/game.dir/game/GameObject.cpp.o
 src/game: src/CMakeFiles/game.dir/game/Level.cpp.o
@@ -201,7 +216,7 @@ src/game: src/CMakeFiles/game.dir/game/main.cpp.o
 src/game: src/CMakeFiles/game.dir/build.make
 src/game: ../lib/BearLibTerminal/Linux64/libBearLibTerminal.so
 src/game: src/CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable game"
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

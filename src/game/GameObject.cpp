@@ -33,6 +33,9 @@ GameObject::GameObject(int x, int y, int layer, string type_val) {
     } else if (type_val == "actor") {
         tile = new Tile("white", '@', " ");
         type = type_val;
+    } else if (type_val == "m_editor") {
+        tile = new Tile(menu_color, ' ', "Create new level");
+        type = type_val;
     } else {
         tile = new Tile(menu_color, ' ', " ");
         type = "default";
@@ -40,8 +43,8 @@ GameObject::GameObject(int x, int y, int layer, string type_val) {
 }
 
 GameObject::~GameObject() {
-    delete pos;
     delete tile;
+    delete pos;
 }
 
 void GameObject::change_object(const char *text, const char *color, int symbol, string type_val) {

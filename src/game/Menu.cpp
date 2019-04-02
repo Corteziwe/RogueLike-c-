@@ -10,11 +10,15 @@ using namespace std;
 Menu::Menu() {
     cursor = new GameObject(4, 5, 0, "cursor");
     engine = new Engine();
+    editor = new Editor(10, 20);
     close_the_game = false;
     gameIsRun = false;
+    editorIsRun = false;
     auto start = new GameObject(5, 5, 0, "m_start");
-    auto exit = new GameObject(5, 6, 0, "m_exit");
+    auto editor = new GameObject(5, 6, 0, "m_editor");
+    auto exit = new GameObject(5, 7, 0, "m_exit");
     auto name = new GameObject(5, 5, 1, "m_name");
+    menu_objects.push_back(editor);
     menu_objects.push_back(start);
     menu_objects.push_back(exit);
     menu_objects.push_back(name);
@@ -34,6 +38,15 @@ void Menu::update() {
             gameIsRun = false;
             cursor->set_pos(4, 5, 0);
         }
+    } else if (editorIsRun) {
+        editor->update();
+        int key = terminal_peek();
+        if (key == TK_ESCAPE) {
+            delete editor;
+            editor = new Editor(10, 20);
+            editorIsRun = false;
+            cursor->set_pos(4, 5, 0);
+        }
     } else {
         int key = terminal_peek();
 
@@ -43,6 +56,7 @@ void Menu::update() {
                     if (cursor->get_pos()->getLayer() == obj->get_pos()->getLayer()) {
                         if (cursor->get_pos()->getY() - 1 == obj->get_pos()->getY()) {
                             cursor->get_pos()->move(UP);
+                            break;
                         }
                     }
                 }
@@ -52,6 +66,7 @@ void Menu::update() {
                     if (cursor->get_pos()->getLayer() == obj->get_pos()->getLayer()) {
                         if (cursor->get_pos()->getY() + 1 == obj->get_pos()->getY()) {
                             cursor->get_pos()->move(DOWN);
+                            break;
                         }
                     }
                 }
@@ -65,6 +80,9 @@ void Menu::update() {
                         }
                         if (obj->get_type() == "m_start") {
                             cursor->get_pos()->move(L_UP);
+                        }
+                        if (obj->get_type() == "m_editor") {
+                            editorIsRun = true;
                         }
                     }
                 }
@@ -99,6 +117,8 @@ void Menu::render() {
             //cursor->set_pos(4, 5, 0);
             //gameIsRun = false;
         }
+    } else if (editorIsRun) {
+        editor->render();
     } else {
         cursor->render();
         for (auto obj : menu_objects) {

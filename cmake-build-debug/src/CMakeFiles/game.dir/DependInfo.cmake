@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Editor.cpp" "/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src/CMakeFiles/game.dir/game/Editor.cpp.o"
   "/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Engine.cpp" "/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src/CMakeFiles/game.dir/game/Engine.cpp.o"
   "/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/GameObject.cpp" "/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src/CMakeFiles/game.dir/game/GameObject.cpp.o"
   "/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Level.cpp" "/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src/CMakeFiles/game.dir/game/Level.cpp.o"

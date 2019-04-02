@@ -125,6 +125,33 @@ game/fast:
 	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/build
 .PHONY : game/fast
 
+game/Editor.o: game/Editor.cpp.o
+
+.PHONY : game/Editor.o
+
+# target to build an object file
+game/Editor.cpp.o:
+	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/game/Editor.cpp.o
+.PHONY : game/Editor.cpp.o
+
+game/Editor.i: game/Editor.cpp.i
+
+.PHONY : game/Editor.i
+
+# target to preprocess a source file
+game/Editor.cpp.i:
+	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/game/Editor.cpp.i
+.PHONY : game/Editor.cpp.i
+
+game/Editor.s: game/Editor.cpp.s
+
+.PHONY : game/Editor.s
+
+# target to generate assembly for a file
+game/Editor.cpp.s:
+	cd /home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/game/Editor.cpp.s
+.PHONY : game/Editor.cpp.s
+
 game/Engine.o: game/Engine.cpp.o
 
 .PHONY : game/Engine.o
@@ -377,6 +404,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... game"
 	@echo "... edit_cache"
+	@echo "... game/Editor.o"
+	@echo "... game/Editor.i"
+	@echo "... game/Editor.s"
 	@echo "... game/Engine.o"
 	@echo "... game/Engine.i"
 	@echo "... game/Engine.s"

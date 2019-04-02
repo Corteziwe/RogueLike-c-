@@ -15,9 +15,10 @@ public:
     ~Level();
 
     void createMapObject(GameObject* obj);
-    void removeMapObject(Position* pos, string type);
+    void removeMapObject(Position* pos);
     GameObject* getMapObject(int x, int y, int layer);
 
+    // Game Functions
     void restore_level();
     vector <GameObject*> getWalls();
     vector <GameObject*> getCoins();
@@ -29,6 +30,7 @@ public:
     GameObject* getPlayer();
     int getCoinsNumber();
     int getLevelNumber() { return level_number; }
+
 
     void update();
     void render();

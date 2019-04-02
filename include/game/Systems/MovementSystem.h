@@ -16,8 +16,9 @@ class MovementSystem: public System {
     GameObject *const actor;
     Level* level;
     CollisionSystem* collision_system;
+    bool editor;
  public:
-    MovementSystem(GameObject *const actor, Level* level) : actor(actor), level(level) {
+    MovementSystem(GameObject *const actor, Level* level, bool isEditor) : actor(actor), level(level), editor(isEditor) {
         collision_system = new CollisionSystem(level);
     }
     void update() override;

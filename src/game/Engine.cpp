@@ -9,7 +9,7 @@
 Engine::Engine() {
     level_system = new LevelSystem();
     cur_level = level_system->getCurrentLevel()->getLevelNumber();
-    player_movement_system = new MovementSystem(level_system->getCurrentLevel()->getPlayer(), level_system->getCurrentLevel());
+    player_movement_system = new MovementSystem(level_system->getCurrentLevel()->getPlayer(), level_system->getCurrentLevel(), false);
     systems.push_back(level_system);
     systems.push_back(player_movement_system);
 }
@@ -30,7 +30,7 @@ void Engine::update() {
     }
     if (cur_level != level_system->getCurrentLevel()->getLevelNumber()) {
         delete player_movement_system;
-        player_movement_system = new MovementSystem(level_system->getCurrentLevel()->getPlayer(), level_system->getCurrentLevel());
+        player_movement_system = new MovementSystem(level_system->getCurrentLevel()->getPlayer(), level_system->getCurrentLevel(), false);
         cur_level++;
     }
 }

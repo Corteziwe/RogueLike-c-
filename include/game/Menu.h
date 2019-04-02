@@ -9,6 +9,7 @@
 #include <vector>
 #include "game/GameObject.h"
 #include "game/Engine.h"
+#include "game/Editor.h"
 
 #endif //GAME_MENU_H
 
@@ -26,6 +27,8 @@ public:
 private:
     bool close_the_game;
     bool gameIsRun;
+    bool editorIsRun;
+    Editor* editor;
     Engine* engine;
     GameObject* cursor;
     vector <GameObject*> menu_objects;

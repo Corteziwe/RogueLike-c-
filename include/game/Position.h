@@ -12,7 +12,6 @@ enum movement { UP, DOWN, LEFT, RIGHT, L_UP, L_DOWN};
 class Position {
  public:
     Position(int valueX, int valueY, int valueLayer): x(valueX), y(valueY), layer(valueLayer) {}
-    ~Position() = default;
     int getX() { return x; }
     int getY() { return y; }
     int getLayer() { return  layer; }

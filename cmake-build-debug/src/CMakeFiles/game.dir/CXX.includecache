@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../include/game/Editor.h
+vector
+-
+game/Systems/MovementSystem.h
+-
+game/Systems/System.h
+../include/game/game/Systems/System.h
+
 ../include/game/Engine.h
 string
 -
@@ -41,6 +49,8 @@ game/GameObject.h
 ../include/game/game/GameObject.h
 game/Engine.h
 ../include/game/game/Engine.h
+game/Editor.h
+../include/game/game/Editor.h
 
 ../include/game/Position.h
 
@@ -90,6 +100,28 @@ wchar.h
 sstream
 -
 
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Editor.cpp
+game/Editor.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/game/Editor.h
+
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Engine.cpp
+game/Systems/MovementSystem.h
+-
+BearLibTerminal.h
+-
+game/Engine.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/game/Engine.h
+
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/GameObject.cpp
+BearLibTerminal.h
+-
+game/GameObject.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/game/GameObject.h
+
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Level.cpp
+game/Level.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/game/Level.h
+
 /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Menu.cpp
 string
 -
@@ -97,4 +129,38 @@ BearLibTerminal.h
 -
 game/Menu.h
 /home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/game/Menu.h
+
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Position.cpp
+game/Position.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/game/Position.h
+
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/CollisionSystem.cpp
+game/Systems/CollisionSystem.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/game/Systems/CollisionSystem.h
+
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/LevelSystem.cpp
+game/Systems/LevelSystem.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/game/Systems/LevelSystem.h
+iostream
+-
+fstream
+-
+string
+-
+game/Level.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/game/Level.h
+
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/MovementSystem.cpp
+BearLibTerminal.h
+-
+game/Systems/MovementSystem.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Systems/game/Systems/MovementSystem.h
+
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/main.cpp
+BearLibTerminal.h
+-
+game/Menu.h
+-
+game/Position.h
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/game/Position.h
 

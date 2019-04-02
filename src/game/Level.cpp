@@ -123,18 +123,15 @@ void Level::createMapObject(GameObject *obj) {
     }
 }
 
-void Level::removeMapObject(Position* pos, string type) {
-    if (type == "coin") {
-        for (auto object : coins) {
-            if ((pos->compare(object->get_pos()))&&(object->get_type() == type)) {
-                delete object;
-            }
+void Level::removeMapObject(Position* pos) {
+    for (auto object : coins) {
+        if (pos->compare(object->get_pos())) {
+            delete object;
         }
-    } else {
-        for (auto object : map_objects) {
-            if ((pos->compare(object->get_pos())) && (object->get_type() == type)) {
-                delete object;
-            }
+    }
+    for (auto object : map_objects) {
+        if (pos->compare(object->get_pos())) {
+            delete object;
         }
     }
 }

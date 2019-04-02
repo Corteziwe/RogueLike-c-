@@ -98,6 +98,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/alex-linux/Документы/Projects/aleksandr-trojan-game/include/game/Editor.h">
+			<Option target="game"/>
+		</Unit>
 		<Unit filename="/home/alex-linux/Документы/Projects/aleksandr-trojan-game/include/game/Engine.h">
 			<Option target="game"/>
 		</Unit>
@@ -126,6 +129,9 @@
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/alex-linux/Документы/Projects/aleksandr-trojan-game/include/game/Tile.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Editor.cpp">
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/alex-linux/Документы/Projects/aleksandr-trojan-game/src/game/Engine.cpp">
