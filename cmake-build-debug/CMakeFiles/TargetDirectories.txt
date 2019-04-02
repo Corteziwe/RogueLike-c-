@@ -1,0 +1,6 @@
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles/lint.dir
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src/CMakeFiles/game.dir
+/home/alex-linux/Документы/Projects/aleksandr-trojan-game/cmake-build-debug/src/CMakeFiles/edit_cache.dir

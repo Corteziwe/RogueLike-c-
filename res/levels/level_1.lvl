@@ -1,0 +1,21 @@
+40 10 2 2
+Wall 1 6
+Wall 2 6
+Wall 3 6
+Wall 4 6
+Wall 6 6
+Wall 7 6
+Wall 8 6
+Wall 9 6
+Wall 10 6
+Wall 10 1
+Wall 10 2
+Wall 10 3
+Wall 10 4
+Wall 10 5
+Wall 10 6
+Coin 5 5
+Coin 14 5
+Coin 18 4
+Coin 25 7
+Exit 40 6
