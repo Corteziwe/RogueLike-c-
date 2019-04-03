@@ -9,6 +9,7 @@ src/CMakeFiles/game.dir/game/Editor.cpp.o: ../include/game/Systems/CollisionSyst
 src/CMakeFiles/game.dir/game/Editor.cpp.o: ../include/game/Systems/MovementSystem.h
 src/CMakeFiles/game.dir/game/Editor.cpp.o: ../include/game/Systems/System.h
 src/CMakeFiles/game.dir/game/Editor.cpp.o: ../include/game/Tile.h
+src/CMakeFiles/game.dir/game/Editor.cpp.o: ../lib/BearLibTerminal/include/BearLibTerminal.h
 src/CMakeFiles/game.dir/game/Editor.cpp.o: ../src/game/Editor.cpp
 
 src/CMakeFiles/game.dir/game/Engine.cpp.o: ../include/game/Engine.h

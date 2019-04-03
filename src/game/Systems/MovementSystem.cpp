@@ -50,16 +50,20 @@ void MovementSystem::update() {
 
         switch (key) {
             case TK_UP:
-                actor->get_pos()->move(UP);
+                if (actor->get_pos()->getY() > 1)
+                    actor->get_pos()->move(UP);
                 break;
             case TK_DOWN:
-                actor->get_pos()->move(DOWN);
+                if (actor->get_pos()->getY() < level->getMapHeight()-1)
+                    actor->get_pos()->move(DOWN);
                 break;
             case TK_RIGHT:
-                actor->get_pos()->move(RIGHT);
+                if (actor->get_pos()->getX() < level->getMapWidth()-1)
+                    actor->get_pos()->move(RIGHT);
                 break;
             case TK_LEFT:
-                actor->get_pos()->move(LEFT);
+                if (actor->get_pos()->getX() > 1)
+                    actor->get_pos()->move(LEFT);
                 break;
             case TK_W:
                 level->createMapObject(new GameObject(actor->get_pos()->getX(), actor->get_pos()->getY(), 2, "wall"));

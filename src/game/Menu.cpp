@@ -4,13 +4,15 @@
 #include <string>
 #include <BearLibTerminal.h>
 #include "game/Menu.h"
+#include "stdio.h"
+#include "stdlib.h"
 
 using namespace std;
 
 Menu::Menu() {
     cursor = new GameObject(4, 5, 0, "cursor");
     engine = new Engine();
-    editor = new Editor(10, 20);
+    editor = new Editor(0, 0);
     close_the_game = false;
     gameIsRun = false;
     editorIsRun = false;
@@ -43,7 +45,7 @@ void Menu::update() {
         int key = terminal_peek();
         if (key == TK_ESCAPE) {
             delete editor;
-            editor = new Editor(10, 20);
+            editor = new Editor(0, 0);
             editorIsRun = false;
             cursor->set_pos(4, 5, 0);
         }
@@ -118,6 +120,17 @@ void Menu::render() {
             //gameIsRun = false;
         }
     } else if (editorIsRun) {
+        if (editor->getLevelWidth() == 0 && editor->getLevelHeight() == 0) {
+            wchar_t mapHeight[2] = L"";
+            wchar_t mapWidth[2] = L"";
+            terminal_print(5, 5, "Enter level height:");
+            terminal_read_str(5, 6, mapHeight, sizeof(mapHeight) -1);
+            terminal_print(5, 6, mapHeight);
+            terminal_print(5, 7, "Enter level width:");
+            terminal_read_str(5, 8, mapWidth, sizeof(mapHeight) -1);
+            delete editor;
+            editor = new Editor(stoi(mapHeight), stoi(mapWidth));
+        }
         editor->render();
     } else {
         cursor->render();

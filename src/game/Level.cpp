@@ -58,6 +58,10 @@ int Level::getMapHeight() {
     return mapHeight;
 }
 
+int Level::getMapWidth() {
+    return mapWidth;
+}
+
 vector <GameObject*> Level::getWalls() {
     vector <GameObject*> walls;
     for (auto obj : map_objects) {
@@ -124,15 +128,21 @@ void Level::createMapObject(GameObject *obj) {
 }
 
 void Level::removeMapObject(Position* pos) {
+    int i = 0;
     for (auto object : coins) {
         if (pos->compare(object->get_pos())) {
+            coins.erase(coins.begin() + i);
             delete object;
         }
+        i++;
     }
+    i = 0;
     for (auto object : map_objects) {
         if (pos->compare(object->get_pos())) {
+            map_objects.erase(map_objects.begin() + i);
             delete object;
         }
+        i++;
     }
 }
 

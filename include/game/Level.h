@@ -27,6 +27,7 @@ public:
     int getSteps();
     void changeSteps(int h);
     int getMapHeight();
+    int getMapWidth();
     GameObject* getPlayer();
     int getCoinsNumber();
     int getLevelNumber() { return level_number; }

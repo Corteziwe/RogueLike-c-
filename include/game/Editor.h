@@ -18,10 +18,15 @@ class Editor {
 
     void update();
     void render();
+    int getLevelHeight();
+    int getLevelWidth();
 
  private:
     MovementSystem* editor_movement_system;
     Level* level;
+    int last_level_num;
+    bool save_level;
+    bool level_saved;
     int map_height;
     int map_width;
 };
